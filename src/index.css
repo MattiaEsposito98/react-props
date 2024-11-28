@@ -46,3 +46,7 @@ body {
 .col-12 {
   width: 100%;
 }
+
+.col-6 {
+  width: 50%;
+}
