@@ -1,12 +1,13 @@
+import ImgNotFound from '../../assets/ImgNotFound.png'
 import style from './Card.module.css'
 
 export default function Card({ className = '', title = '', content = '', image, tags = [], published }) {
-  const tagsPost = tags.join(',')
+  const tagsPost = tags.join(' ')
 
   return (
 
     published && <div className={`${style.card} ${className}`}>
-      <img className={style.image} src={image || "https://picsum.photos/200/300"} alt="" />
+      <img className={style.image} src={image || ImgNotFound} alt="" />
       <div className={style.card_body}>
         <h3 className={style.card_title}>{title || "Titolo del post"}</h3>
         <p> {tagsPost} </p>
