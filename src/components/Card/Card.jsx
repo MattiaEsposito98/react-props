@@ -11,7 +11,7 @@ export default function Card({ className = '', title = '', content = '', image, 
         <h3 className={style.card_title}>{title || "Titolo"}</h3>
         <div>
           {tags.map((tag, i) => (
-            <span key={i} className={style[tag]}>
+            <span key={i} className={`${style.span} ${style[tag]}`}>
               {tag}
             </span>
           ))}
