@@ -12,7 +12,7 @@ export default function Main() {
               <div className="row">
                 {posts.map((post) => (
                   <div key={post.id} className="col-6" >
-                    <Card title={post.title} tags={post.tags} image={post.image} />
+                    <Card title={post.title} tags={post.tags} image={post.image} published={post.published} />
                   </div>
                 ))}
               </div> :
